@@ -8,4 +8,4 @@ const LivingRoom = () => {
   );
 }
 
-export default LivingRoom;
+export default LivingRoom; 
