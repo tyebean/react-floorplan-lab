@@ -1,8 +1,82 @@
 
 
 div {
-  border: 1px solid grey;
   margin: 5px;
   padding: 5px;
+  text-align: center;
+}
+
+.floorplan {
+  background-color: rgb(186, 122, 199);
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "kitchen livingroom livingroom full-bath"
+    "kitchen livingroom livingroom full-bath"
+    "bedroom-3 bedroom-2 bedroom-1 bedroom-1"
+    "half-bath half-bath bedroom-1 bedroom-1"; 
+}
+
+.kitchen {
+  background-color: pink;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . oven"
+    ". . sink"
+    ". . ."; 
+  grid-area: kitchen;  
+}
+
+.oven {
+  background-color: rgb(241, 203, 131);
+  grid-area: oven;
+}
+
+.sink {
+  background-color: rgb(240, 153, 121);
+  grid-area: sink;
+}
+
+.livingroom { 
+  background-color: plum;
+  grid-area: livingroom; 
+  }
+
+#full-bath { 
+  background-color: powderblue;
+  grid-area: full-bath; 
+}
+
+#bedroom-1 { 
+  background-color: purple;
+  grid-area: bedroom-1;
+}
+
+#bedroom-2 { 
+  background-color: rebeccapurple;
+  grid-area: bedroom-2; 
+}
+
+#bedroom-3 { 
+  background-color: royalblue;
+  grid-area: bedroom-3; 
+}
+
+#half-bath {
+  background-color: salmon;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."; 
+  grid-area: half-bath; 
 }
 

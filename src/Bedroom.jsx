@@ -4,10 +4,11 @@
 
 const Bedroom = (props) => {
   return (  
-    <div> 
-      Bedroom {props.bedNum} 
+    <div id={`bedroom-${props.bedNum}`}> 
+      Bedroom {props.bedNum}
       </div>
   );
 }
 
 export default Bedroom; 
+

@@ -2,7 +2,7 @@
 
 const Oven = () => {
   return (
-    <div>
+    <div className="oven">
       Oven
     </div>
   );

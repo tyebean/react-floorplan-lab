@@ -2,7 +2,7 @@
 //Renders the text “Living Room”
 const LivingRoom = () => {
   return ( 
-    <div>
+    <div className="livingroom">
       Living Room
     </div>
   );

@@ -1,10 +1,12 @@
 
 const Bath = (props) => {
   return ( 
-    <div>
-      Bath {props.size}
+    <div id={`${props.size}`}>
+      {props.size}
     </div>
   );
 }
 
 export default Bath; 
+
+
